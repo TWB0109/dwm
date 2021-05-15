@@ -21,4 +21,4 @@ Check for keybindings in `config.def.h`, if you want to add your own, I recommen
 Where MOD4 = WINDOWS/SUPER Key
 
 ## Dependencies
-Check the `dwms`, `natscroll`, `autolock` and `dbar` scripts for dependencies, modify it to add or remove dependencies.
+Check the `dwms`, `natscroll`, `autolock` and `dbar` scripts for dependencies, modify them to add or remove dependencies.
