@@ -3,8 +3,11 @@
 setxkbmap -layout latam
 nitrogen --restore
 xrdb ~/.Xresources
+# Copy the script natscroll in this repo to $HOME/.scripts
 $HOME/.scripts/natscroll
+# Copy the script autolock in this repo to $HOME/.scripts
 $HOME/.scripts/autolock &
+# In Arch install "polkit-gnome"
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 dbar &
 

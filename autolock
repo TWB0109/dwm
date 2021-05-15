@@ -1,0 +1,6 @@
+#!/bin/bash
+
+locker="slock"
+
+#export DISPLAY=:1.0
+xautolock -time 5 -notify 60 -corners 00+- -locker '$locker' 
