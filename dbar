@@ -2,12 +2,12 @@
 
 vol(){
     vol=$(amixer get Master | awk -F'[]%[]' '/%/ {if ($7 == "off") { print "MM" } else { print $2 }}' | head -n 1)
-    echo -e "墳: $vol"
+    echo -e "墳 $vol"
 }
 
 wifi(){
     wifi=$(nmcli | sed '1q' | awk '{print $4}')
-    [[ -n $wifi ]] && echo -e "直: $wifi" || echo -e "直: DISCONNECTED"
+    [[ -n $wifi ]] && echo -e "直 $wifi" || echo -e "直: DISCONNECTED"
 }
 
 #bri(){
@@ -17,12 +17,12 @@ wifi(){
 
 bat(){
     bat=$(acpi | cut -d" " -f 4 | cut -d"," -f 1 )
-    echo -e "BAT: $bat"
+    echo -e "BAT $bat"
 }
 
 timedate(){
     time=$(date +"%a %d, %b %Y | %I:%M")
-    echo -e ": $time"
+    echo -e " $time"
 }
 
 SLEEP_SEC=1
