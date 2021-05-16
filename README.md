@@ -17,6 +17,8 @@ Check for keybindings in `config.def.h`, if you want to add your own, I recommen
 
 - To restart (recompile) dwm in place after changing configuration use `MOD4+q`
 - To quit dwm use `MOD4+Shift+q`
+- To lock use `MOD4+x` (slock is needed, here's my build, [](https://github.com/TWB0109/slock))
+
 
 Where MOD4 = WINDOWS/SUPER Key
 

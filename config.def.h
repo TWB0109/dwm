@@ -62,6 +62,7 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-h", "14", "-p", "RUN:", NULL };
 static const char *dmenu[] = { "dmenu_run", "-h", "14", "-p", "RUN:", NULL };
 static const char *termcmd[]  = { "st", NULL };
+static const char *termcmd[]  = { "slock", NULL };
 static const char *killcmd[]  = { "pkill", "dwm", NULL };
 
 static Key keys[] = {
@@ -95,6 +96,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_4,                      3)
 	TAGKEYS(                        XK_5,                      4)
 	{ MODKEY|ShiftMask,             XK_q,      spawn,          {.v = killcmd} },
+	{ MODKEY,                       XK_x,      spawn,          {.v = lockcmd} },
 	{ MODKEY,                       XK_q,      quit,           {0} },
 };
 
