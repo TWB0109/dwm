@@ -18,6 +18,7 @@ static const char *colors[][3]      = {
     /*               fg           bg         border                         */
     [SchemeNorm] = { norm_fg,     norm_bg,   norm_border }, // unfocused wins
     [SchemeSel]  = { sel_fg,      sel_bg,    sel_border },  // the focused win
+	[SchemeStatus]  = { "#d4c5a1", norm_bg,  norm_border  }, // Statusbar right {text,background,not used but cannot be empty}
 };
 
 /* tagging */
