@@ -6,19 +6,23 @@ static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "fixed:pixelsize=14:weight=bold:antialias=true" };
-static const char norm_fg[] = "#665c54";
-static const char norm_bg[] = "#32302f";
-static const char norm_border[] = "#32302f";
 
-static const char sel_fg[] = "#b8bb26";
-static const char sel_bg[] = "#32302f";
-static const char sel_border[] = "#b8bb26";
+static const char col_black[]    = "#32302f";
+static const char col_red[]      = "#fb4934";
+static const char col_green[]    = "#b8bb26";
+static const char col_yellow[]   = "#fabd2f";
+static const char col_blue[]     = "#83a598";
+static const char col_pink[]     = "#d3869b";
+static const char col_lgreen[]   = "#8ec07c";
+static const char col_whiteish[] = "#d5c4a1";
+static const char col_gray[]     = "#665c54";
+static const char col_white[]    = "#fbf1c7";
 
 static const char *colors[][3]      = {
-    /*               fg           bg         border                         */
-    [SchemeNorm] = { norm_fg,     norm_bg,   norm_border }, // unfocused wins
-    [SchemeSel]  = { sel_fg,      sel_bg,    sel_border },  // the focused win
-	[SchemeStatus]  = { "#d4c5a1", norm_bg,  norm_border  }, // Statusbar right {text,background,not used but cannot be empty}
+    /*                 fg            bg         border                         */
+    [SchemeNorm]   = { col_gray,     col_black, col_black }, // unfocused wins
+    [SchemeSel]    = { col_green,    col_black, col_green },  // the focused win
+	[SchemeStatus] = { col_whiteish, col_black, col_black }, // Statusbar right {text,background,not used but cannot be empty}
 };
 
 /* tagging */
