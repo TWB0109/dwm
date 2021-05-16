@@ -10,6 +10,7 @@ $HOME/.scripts/autolock &
 # In Arch install "polkit-gnome"
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 dbar &
+picom --conf /dev/null &
 
 while true; do
     dwm 2> ~/.dwm.log
