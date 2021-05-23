@@ -1,4 +1,4 @@
-# <img src="dwm.png" style="width: 100px; height: 50px;"> - dynamic window manager
+# ![](dwm.png)
 dwm is an extremely fast, small, and dynamic window manager for X.
 
 ## Installation
