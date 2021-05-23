@@ -1,6 +1,6 @@
 #!/bin/bash
 
-setxkbmap -layout latam
+setxkbmap -layout us
 nitrogen --restore
 xrdb ~/.Xresources
 # Copy the script natscroll in this repo to $HOME/.scripts
