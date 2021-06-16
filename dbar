@@ -15,10 +15,10 @@ wifi(){
     #echo -e "BRIGHTNESS: $bri"
 #}
 
-bat(){
-    bat=$(acpi | cut -d" " -f 4 | cut -d"," -f 1 )
-    echo -e "BAT $bat"
-}
+#bat(){
+    #bat=$(acpi | cut -d" " -f 4 | cut -d"," -f 1 )
+    #echo -e "BAT $bat"
+#}
 
 timedate(){
     time=$(date +"%a %d, %b %Y | %I:%M")
