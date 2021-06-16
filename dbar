@@ -27,6 +27,6 @@ timedate(){
 
 SLEEP_SEC=1
 while true; do
-    xsetroot -name "[ $(vol) ]  [ $(wifi) ]  [ $(bat) ]  [ $(timedate) ] "
+    xsetroot -name "[ $(vol) ]  [ $(wifi) ]  [ $(timedate) ] "
     sleep $SLEEP_SEC
 done
