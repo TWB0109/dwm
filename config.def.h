@@ -67,13 +67,14 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-h", "14", "-p", "RUN:", NULL };
 static const char *dmenu[] = { "dmenu_run", "-h", "14", "-p", "RUN:", NULL };
+static const char *rofi[] = { "rofi", "-show", "drun", NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
 static const char *lockcmd[]  = { "slock", NULL };
 static const char *killcmd[]  = { "pkill", "dwm", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY|ShiftMask,             XK_d,      spawn,          {.v = dmenu } },
+	{ MODKEY|ShiftMask,             XK_d,      spawn,          {.v = rofi } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
