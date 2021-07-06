@@ -15,7 +15,7 @@ picom -cf --vsync &
 sxhkd &
 xsettingsd &
 xfce4-power-manager --daemon &
-xidlehook --not-when-fullscreen --not-when-audio --timer normal 300 'slock' '' &
+xidlehook --not-when-fullscreen --not-when-audio --timer normal 600 'slock' '' &
 
 while true; do
     dwm 2> ~/.dwm.log
