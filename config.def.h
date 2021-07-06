@@ -6,7 +6,10 @@ static const unsigned int snap      = 10;       /* snap pixel */
 static const unsigned int minwsz    = 20;       /* Minimal heigt of a client for smfact */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "fixed:pixelsize=14:weight=bold:antialias=true" };
+static const char *fonts[]          = { 
+    "fixed:pixelsize=14:weight=bold:antialias=true",
+    "FontAwesome:pixelsize=14:weight=Regular:antialias=true",
+};
 
 static const char col_black[]    = "#32302f";
 static const char col_red[]      = "#fb4934";
