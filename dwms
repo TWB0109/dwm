@@ -12,6 +12,7 @@ $HOME/.scripts/autolock &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 dbar &
 picom -cf --vsync &
+sxhkd &
 
 while true; do
     dwm 2> ~/.dwm.log
