@@ -13,6 +13,7 @@ $HOME/.scripts/autolock &
 dbar &
 picom -cf --vsync &
 sxhkd &
+xsettingsd &
 
 while true; do
     dwm 2> ~/.dwm.log
