@@ -77,7 +77,7 @@ static const char *killcmd[]  = { "pkill", "dwm", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY|ShiftMask,             XK_d,      spawn,          {.v = rofi } },
+	{ MODKEY|ShiftMask,             XK_d,      spawn,          {.v = dmenu } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
