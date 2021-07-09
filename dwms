@@ -7,7 +7,6 @@ xrdb ~/.Xresources
 # Copy the script natscroll in this repo to $HOME/.scripts
 $HOME/.scripts/natscroll
 # Copy the script autolock in this repo to $HOME/.scripts
-$HOME/.scripts/autolock &
 # In Arch install "polkit-gnome"
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 dbar &
@@ -15,7 +14,7 @@ picom -cf --vsync &
 sxhkd &
 xsettingsd &
 xfce4-power-manager --daemon &
-xidlehook --not-when-fullscreen --not-when-audio --timer normal 600 'slock' '' &
+xidlehook --not-when-fullscreen --not-when-audio --timer 600 'slock' '' &
 
 while true; do
     dwm 2> ~/.dwm.log
