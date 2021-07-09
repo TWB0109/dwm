@@ -26,7 +26,6 @@ static const char *colors[][3]      = {
     /*                 fg            bg         border                         */
     [SchemeNorm]   = { col_gray,     col_black, col_black }, // unfocused wins
     [SchemeSel]    = { col_green,    col_black, col_green },  // the focused win
-	[SchemeStatus] = { col_lgreen, col_black, col_black }, // Statusbar right {text,background,not used but cannot be empty}
 };
 
 /* tagging */

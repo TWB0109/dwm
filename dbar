@@ -32,6 +32,6 @@ timedate(){
 
 SLEEP_SEC=1
 while true; do
-    xsetroot -name "[ $(ram) ]  [ $(vol) ]  [ $(wifi) ]  [ $(timedate) ] "
+    xsetroot -name "^c#fabd2f^[ $(ram) ]  ^c#fb4934^[ $(vol) ]  ^c#83a598^[ $(wifi) ]  ^c#fbf1c7^[ $(timedate) ] "
     sleep $SLEEP_SEC
 done
