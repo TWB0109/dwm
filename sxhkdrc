@@ -23,3 +23,7 @@ XF86Audio{Play,Prev,Next,Stop}
 # Toggle Do Not Disturb
 super + n
     sh ~/.scripts/dnd
+
+# Open nmtui to control wifi
+super +  shift + n
+    alacritty --title "nmtui" -e nmtui
