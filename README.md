@@ -17,6 +17,7 @@ Add the following line to your .xinitrc to start dwm using startx:
 
 ## Usage
 Check for keybindings in `config.def.h`, if you want to add your own, I recommend using [sxhkd](https://github.com/baskerville/sxhkd)
+> An example sxhdkrc file is in the repo
 
 - To restart dwm in place after changing configuration use `MOD4+q`
 - To quit dwm use `MOD4+Shift+q`
@@ -27,7 +28,7 @@ Check for keybindings in `config.def.h`, if you want to add your own, I recommen
 Where MOD4 = WINDOWS/SUPER Key
 
 ## Dependencies
-Check the `dwms`, `natscroll`, `autolock` and `dbar` scripts for dependencies, modify them to add or remove dependencies.
+Check the `dwms`, `natscroll`, and `dbar` scripts for dependencies, modify them to add or remove dependencies.
 
 ## Notes
-`dwm-colorbar-6.2.diff` was applied partially to make the status more readable
+Some patches are not completely applied 

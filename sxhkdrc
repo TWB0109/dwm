@@ -1,0 +1,25 @@
+# Reload config file for sxhkd
+super + Escape 
+    pkill -USR1 -x sxhkd
+
+super + o; o
+    playerctl play-pause
+
+super + o; i
+    playerctl previous
+
+super + o; p
+    playerctl next
+
+XF86Audio{Mute,RaiseVolume,LowerVolume}
+    amixer -q set Master {toggle,10%+,10%-}
+
+XF86Audio{Play,Prev,Next,Stop}
+    playerctl {play-pause,previous,next,stop}
+
+{Print, alt + Print, ctrl + Print}
+    {gnome-screenshot &,gnome-screenshot -i,gnome-screenshot -a}
+
+# Toggle Do Not Disturb
+super + n
+    sh ~/.scripts/dnd
