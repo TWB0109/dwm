@@ -5,7 +5,7 @@ dwm is an extremely fast, small, and dynamic window manager for X.
 
 ## Installation
 1. Edit the config.def.h file to match your liking
-2. Edit the `dwms`, `natscroll`, `autolock` and `dbar` scripts to match your liking
+2. Edit the `dwms`, `natscroll`, and `dbar` scripts to match your liking
 3. Run `sudo make clean install`
 
 ## Running dwm
