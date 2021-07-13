@@ -37,11 +37,7 @@ timedate(){
 
 SLEEP_SEC=1
 while true; do  
-    if [[ -z $(mpc current) ]];
-    then
-        xsetroot -name "^c#fabd2f^[ $(ram) ]  ^c#fb4934^[ $(vol) ]  ^c#83a598^[ $(wifi) ]  ^c#8ec07c^[ $(timedate) ] "
-    else
-        xsetroot -name "^c#d3869b^[ $(mpd) ]  ^c#fabd2f^[ $(ram) ]  ^c#fb4934^[ $(vol) ]  ^c#83a598^[ $(wifi) ]  ^c#8ec07c^[ $(timedate) ] "
-    fi
+    [[ -z $(mpc current) ]] && xsetroot -name "^c#fabd2f^[ $(ram) ]  ^c#fb4934^[ $(vol) ]  ^c#83a598^[ $(wifi) ]  ^c#8ec07c^[ $(timedate) ] " \
+    || xsetroot -name "^c#d3869b^[ $(mpd) ]  ^c#fabd2f^[ $(ram) ]  ^c#fb4934^[ $(vol) ]  ^c#83a598^[ $(wifi) ]  ^c#8ec07c^[ $(timedate) ] "
     sleep $SLEEP_SEC
 done
