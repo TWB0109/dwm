@@ -14,6 +14,8 @@ Add the following line to your .xinitrc to start dwm using startx:
 
     dwms
 
+You don't need to do anything if you use a login manager, as this build creates a dwm.desktop file and installs it on `/usr/share/xsessions`
+so that your login manager can start dwm. Just log out, select dwm and that's it.
 
 ## Usage
 Check for keybindings in `config.def.h`, if you want to add your own, I recommend using [sxhkd](https://github.com/baskerville/sxhkd)
