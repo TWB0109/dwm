@@ -17,7 +17,7 @@ vol(){
 
 wifi(){
     wifi=$(nmcli | sed '1q' | awk '{print $4}')
-    [[ -n $wifi ]] && echo -e "直 $wifi" || echo -e "直: DISCONNECTED"
+    [[ -n $wifi ]] && echo -e "直 $wifi" || echo -e "直 DISCONNECTED"
 }
 
 #bri(){
