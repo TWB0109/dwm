@@ -14,6 +14,7 @@ picom -cf --vsync &
 sxhkd &
 xsettingsd -c ~/.config/xsettingsd/xsettingsd-dwm.conf &
 xfce4-power-manager --daemon &
+dunst &
 xidlehook --not-when-fullscreen --not-when-audio --timer 600 'slock' '' &
 
 while true; do
