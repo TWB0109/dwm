@@ -13,6 +13,7 @@ dbar &
 picom -cf --vsync &
 sxhkd &
 xsettingsd &
+dunst &
 xfce4-power-manager --daemon &
 xidlehook --not-when-fullscreen --not-when-audio --timer 600 'slock' '' &
 
