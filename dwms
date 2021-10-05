@@ -3,6 +3,7 @@
 setxkbmap -layout us
 setxkbmap -option caps:swapescape
 nitrogen --restore
+#hsetroot -solid \#D3869B
 xrdb ~/.Xresources
 # Copy the script natscroll in this repo to $HOME/.scripts
 $HOME/.scripts/natscroll
