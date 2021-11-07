@@ -47,7 +47,7 @@ install: all
 	chmod 755 ${DESTDIR}${PREFIX}/bin/dwms
 	cp -f dbar ${DESTDIR}${PREFIX}/bin
 	chmod 755 ${DESTDIR}${PREFIX}/bin/dbar
-	#cp -f dwm.desktop ${DESTDIR}${DESKTOPPREFIX}
+	cp -f dwm.desktop ${DESTDIR}${DESKTOPPREFIX}
 
 uninstall:
 	rm -f ${DESTDIR}${PREFIX}/bin/dwm\
