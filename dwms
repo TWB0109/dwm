@@ -5,13 +5,10 @@ setxkbmap -option caps:swapescape
 nitrogen --restore
 #hsetroot -solid \#D3869B
 xrdb ~/.Xresources
-# Copy the script natscroll in this repo to $HOME/.scripts
-$HOME/.scripts/natscroll
-# Copy the script autolock in this repo to $HOME/.scripts
-# In Arch install "polkit-gnome"
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+#$HOME/.scripts/natscroll
+#/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 dbar &
-picom --vsync --experimental-backends &
+picom --experimental-backends &
 sxhkd &
 xsettingsd -c ~/.config/xsettingsd/xsettingsd-dwm.conf &
 xfce4-power-manager --daemon &
