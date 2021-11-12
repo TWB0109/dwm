@@ -47,9 +47,11 @@ install: all
 	chmod 755 ${DESTDIR}${PREFIX}/bin/dwms
 	cp -f dbar ${DESTDIR}${PREFIX}/bin
 	chmod 755 ${DESTDIR}${PREFIX}/bin/dbar
+	cp -f dwm.desktop ${DESTDIR}${DESKTOPPREFIX}/dwm.desktop
 
 uninstall:
 	rm -f ${DESTDIR}${PREFIX}/bin/dwm\
-		${DESTDIR}${MANPREFIX}/man1/dwm.1
+		${DESTDIR}${MANPREFIX}/man1/dwm.1\
+		${DESTDIR}${DESKTOPPREFIX}/dwm.desktop\
 
 .PHONY: all options clean dist install uninstall
