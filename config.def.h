@@ -13,7 +13,7 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { 
     //"fixed:pixelsize=14:weight=bold:antialias=true",
-    "Noto Sans:pixelsize=12:weight=bold:antialias=true",
+    "Product Sans:pixelsize=12:weight=medium:antialias=true",
 };
 
 #include "themes/gruvbox.h"
