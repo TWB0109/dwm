@@ -16,11 +16,17 @@ dunst &
 xidlehook --not-when-fullscreen --not-when-audio --timer 600 'slock' '' &
 emacs --daemon &
 mpd &
+
+# Start gnome-keyring for ssh keys
 eval $(gnome-keyring-daemon --start)
 export SSH_AUTH_SOCK
+
+# Start dbus-session
+if test -z "$DBUS_SESSION_BUS_ADDRESS" ; then
+        eval 'dbus-launch --sh-syntax --exit-with-session'
+fi
 
 while true; do
     dwm 2> ~/.dwm.log
 done
 
-#exec dbus-run-session -- dwm
