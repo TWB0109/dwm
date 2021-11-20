@@ -7,15 +7,15 @@ nitrogen --restore
 xrdb ~/.Xresources
 #$HOME/.scripts/natscroll
 #/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-[ -z $(pgrep dbar) ] && dbar &
-[ -z $(pgrep picom) ] && picom --experimental-backends &
-[ -z $(pgrep sxhkd) ] && sxhkd &
-[ -z $(pgrep xsettingsd) ] && xsettingsd -c ~/.config/xsettingsd/xsettingsd-dwm.conf &
-[ -z $(pgrep xfce4-power-manager) ] && xfce4-power-manager --daemon &
-[ -z $(pgrep dunst) ] && dunst &
-[ -z $(pgrep xidlehook) ] && xidlehook --not-when-fullscreen --not-when-audio --timer 600 'slock' '' &
-[ -z $(pgrep emacs) ] && emacs --daemon &
-[ -z $(pgrep mpd) ] && mpd &
+[[ -z $(pgrep dbar) ]] && dbar &
+[[ -z $(pgrep picom) ]] && picom --experimental-backends &
+[[ -z $(pgrep sxhkd) ]] && sxhkd &
+[[ -z $(pgrep xsettingsd) ]] && xsettingsd -c ~/.config/xsettingsd/xsettingsd-dwm.conf &
+[[ -z $(pgrep xfce4-power-manager) ]] && xfce4-power-manager --daemon &
+[[ -z $(pgrep dunst) ]] && dunst &
+[[ -z $(pgrep xidlehook) ]] && xidlehook --not-when-fullscreen --not-when-audio --timer 600 'slock' '' &
+[[ -z $(pgrep emacs) ]] && emacs --daemon &
+[[ -z $(pgrep mpd) ]] && mpd &
 #spotifyd
 
 # Start gnome-keyring for ssh keys
