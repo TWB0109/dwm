@@ -1,5 +1,8 @@
 #!/usr/bin/bash
 
+# Enable qt5ct
+[[ "$DESKTOP_SESSION" != "plasma" ]] && export QT_QPA_PLATFORMTHEME="qt5ct"
+
 setxkbmap -layout us
 setxkbmap -option caps:swapescape
 nitrogen --restore
